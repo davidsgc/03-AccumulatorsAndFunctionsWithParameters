@@ -17,6 +17,7 @@ def main():
     # Test your functions by putting calls to them here:
     print_sequence1()
     draw_circles1()
+    print_sequence2()
 
 def print_sequence1():
     """
@@ -62,13 +63,15 @@ def draw_circles1():
     print('Running draw_circles1:  See graphics window')
     print('--------------------------------------------------')
     radius = 0
-    window = rg.RoseWindow(400,400)
+    window = rg.RoseWindow(400, 400)
     rg.Pen('black', 3)
     for k in range(21):
         radius = radius + (10*k)
         rg.Circle(rg.Point(200, 200), radius)
 
     window.close_on_mouse_click()
+
+
 def print_sequence2():
     """
     Prints:
@@ -81,7 +84,7 @@ def print_sequence2():
       390.
     """
     # -------------------------------------------------------------------------
-    # TODO: 4. Implement this function, per its doc-string above.
+    # DONE: 4. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # -------------------------------------------------------------------------
@@ -89,8 +92,9 @@ def print_sequence2():
     print('--------------------------------------------------')
     print('Running print_sequence2:')
     print('--------------------------------------------------')
-
-
+    for k in range(18):
+        total = 50 + (k * 20)
+        print(total)
 def draw_circles2():
     """
     -- Constructs an rg.RoseWindow whose width and height are both 400.
