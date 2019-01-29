@@ -28,9 +28,22 @@ def run_test_sum_powers(answer):
     print('--------------------------------------------------')
     print('Testing the   sum_powers   function:')
     print('--------------------------------------------------')
-    print('Expected:')
+
+    #Test 1:
+    expected =
+    answer = sum_powers(3, 6)
+    print('Expected:', expected)
     print('Answer:', answer)
-    print
+
+    #Test 2:
+    expected =
+    answer = sum_powers()
+    print('Expected:', expected)
+    print('Answer:', answer)
+
+    #Test 3:
+    expected =
+    answer = sum_powers
 def sum_powers(n, p):
     """
     What comes in:  A non-negative integer n
